@@ -1,8 +1,6 @@
 import Link from "next/link"
 import { Menu, MenuButton, MenuList, MenuItem, IconButton, Flex, Box, Spacer } from '@chakra-ui/react'
-import { FcMenu, FcHome, FcAbout } from 'react-icons/fc'
-import { FaMale, FaFemale } from 'react-icons/fa'
-
+import { FcMenu, FcHome, FcAbout, FcLike, FcBusinessman, FcBusinesswoman, FcDatabase, FcQuestions} from 'react-icons/fc'
 
 const Navbar = () => (
     <Flex p="2" borderBottom="1px" borderColor="gray.100">
@@ -15,13 +13,19 @@ const Navbar = () => (
                 <MenuButton as={IconButton} icon={<FcMenu />} variant="outlined" color="red.400" />
                 <MenuList>
                     <Link href="/" passHref>
-                        <MenuItem icon={<FcHome />}>All Ranking</MenuItem>
+                        <MenuItem icon={<FcDatabase />}>All Ranking</MenuItem>
                     </Link>
                     <Link href="/" passHref>
-                        <MenuItem icon={<FaFemale />}>Female Ranking</MenuItem>
+                        <MenuItem icon={<FcBusinessman />}>Male Ranking</MenuItem>
                     </Link>
                     <Link href="/" passHref>
-                        <MenuItem icon={<FaMale />}>Male Ranking</MenuItem>
+                        <MenuItem icon={<FcBusinesswoman />}>Female Ranking</MenuItem>
+                    </Link>
+                    <Link href="/entry" passHref>
+                        <MenuItem icon={<FcLike />}>I'd like to join</MenuItem>
+                    </Link>
+                    <Link href="/" passHref>
+                        <MenuItem icon={<FcQuestions />}>Contact us</MenuItem>
                     </Link>
                 </MenuList>
 

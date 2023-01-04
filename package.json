@@ -9,10 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@aws-amplify/ui-react": "^4.3.2",
     "@chakra-ui/react": "^2.4.6",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@next/font": "13.1.1",
+    "aws-amplify": "^5.0.8",
     "eslint": "8.31.0",
     "eslint-config-next": "13.1.1",
     "framer-motion": "^8.1.5",
