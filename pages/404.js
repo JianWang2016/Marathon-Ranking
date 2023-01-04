@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
+import Router from 'next/router'
 
 const NotFound = () => {
 

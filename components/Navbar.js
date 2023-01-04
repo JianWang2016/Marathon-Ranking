@@ -22,7 +22,7 @@ const Navbar = () => (
                         <MenuItem icon={<FcBusinesswoman />}>Female Ranking</MenuItem>
                     </Link>
                     <Link href="/entry" passHref>
-                        <MenuItem icon={<FcLike />}>I'd like to join</MenuItem>
+                        <MenuItem icon={<FcLike />}>Join to rank</MenuItem>
                     </Link>
                     <Link href="/" passHref>
                         <MenuItem icon={<FcQuestions />}>Contact us</MenuItem>
