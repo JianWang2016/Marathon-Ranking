@@ -4,8 +4,8 @@ import { FcMenu, FcHome, FcAbout, FcLike, FcBusinessman, FcBusinesswoman, FcData
 
 const Navbar = () => (
     <Flex p="2" borderBottom="1px" borderColor="gray.100">
-        <Box fontSize="3xl" color="blue.400" fontWeight="bold">
-            <Link href="/" paddingleft="2">Marathon Ranking</Link>
+        <Box fontSize="xl" color="blue.400" fontWeight="bold">
+            <Link href="/" paddingleft="2">2022 North America Chinese Marathon Runner Finish Time Ranking</Link>
         </Box>
         <Spacer />
         <Box>
@@ -15,10 +15,10 @@ const Navbar = () => (
                     <Link href="/" passHref>
                         <MenuItem icon={<FcDatabase />}>All Ranking</MenuItem>
                     </Link>
-                    <Link href="/" passHref>
+                    <Link href="/male">
                         <MenuItem icon={<FcBusinessman />}>Male Ranking</MenuItem>
                     </Link>
-                    <Link href="/" passHref>
+                    <Link href="/female" passHref>
                         <MenuItem icon={<FcBusinesswoman />}>Female Ranking</MenuItem>
                     </Link>
                     <Link href="/entry" passHref>

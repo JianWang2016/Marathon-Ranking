@@ -5,9 +5,7 @@ import React, { useState, useEffect } from 'react'
 import { useRouter } from 'next/router';
 
 
-import { 
-  RaceCreateForm 
-} from '../src/ui-components';
+import { RaceCreateForm } from '../src/ui-components';
 
 function Entry() {
 

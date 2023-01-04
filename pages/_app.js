@@ -1,4 +1,4 @@
-// import '../styles/globals.css'
+import '../styles/globals.css'
 import Router from "next/router"
 import Head from "next/head"
 import NProgress from "nprogress"
@@ -21,7 +21,7 @@ function App({ Component, pageProps }) {
   return (
     <>
         <Head>
-          <title>Marathon Ranking</title>
+          <title>2022 North America Chinese Marathon Runner Ranking</title>
         </Head>
 
         <ChakraProvider>
