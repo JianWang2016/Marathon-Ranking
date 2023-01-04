@@ -15,7 +15,7 @@ const Navbar = () => (
                     <Link href="/" passHref>
                         <MenuItem icon={<FcDatabase />}>All Ranking</MenuItem>
                     </Link>
-                    <Link href="/male">
+                    <Link href="/male" passHref>
                         <MenuItem icon={<FcBusinessman />}>Male Ranking</MenuItem>
                     </Link>
                     <Link href="/female" passHref>

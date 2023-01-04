@@ -1,8 +1,11 @@
 import React from 'react'
 import Link from 'next/link'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
+import Layout from "../components/Layout";
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
-import Router from 'next/router'
+
 
 const NotFound = () => {
 
