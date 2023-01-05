@@ -6,7 +6,7 @@
 
 import * as React from "react";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
-import { DividerProps, GridProps, SelectFieldProps, TextFieldProps, TextProps } from "@aws-amplify/ui-react";
+import { DividerProps, GridProps, HeadingProps, SelectFieldProps, TextFieldProps, TextProps } from "@aws-amplify/ui-react";
 export declare type ValidationResponse = {
     hasError: boolean;
     errorMessage?: string;
@@ -41,7 +41,8 @@ export declare type RaceCreateFormValidationValues = {
 export declare type FormProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
 export declare type RaceCreateFormOverridesProps = {
     RaceCreateFormGrid?: FormProps<GridProps>;
-    RowGrid0?: FormProps<GridProps>;
+    SectionalElement2?: FormProps<HeadingProps>;
+    RowGrid1?: FormProps<GridProps>;
     finishHour?: FormProps<TextFieldProps>;
     finishMin?: FormProps<TextFieldProps>;
     finishSec?: FormProps<TextFieldProps>;
@@ -49,11 +50,11 @@ export declare type RaceCreateFormOverridesProps = {
     raceName?: FormProps<TextFieldProps>;
     SectionalElement1?: FormProps<DividerProps>;
     SectionalElement0?: FormProps<TextProps>;
-    RowGrid4?: FormProps<GridProps>;
+    RowGrid5?: FormProps<GridProps>;
     firstName?: FormProps<TextFieldProps>;
     middleName?: FormProps<TextFieldProps>;
     lastName?: FormProps<TextFieldProps>;
-    RowGrid5?: FormProps<GridProps>;
+    RowGrid6?: FormProps<GridProps>;
     gender?: FormProps<SelectFieldProps>;
     dob?: FormProps<TextFieldProps>;
     email?: FormProps<TextFieldProps>;
