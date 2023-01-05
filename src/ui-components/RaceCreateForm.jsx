@@ -72,7 +72,14 @@ export default function RaceCreateForm(props) {
     setErrors({});
   };
   const validations = {
-    finishHour: [{ type: "Required" }],
+    finishHour: [
+      { type: "Required" },
+      {
+        type: "LessThanNum",
+        numValues: [10],
+        validationMessage: "The value must be less than 10",
+      },
+    ],
     finishMin: [
       {
         type: "LessThanNum",
@@ -180,7 +187,7 @@ export default function RaceCreateForm(props) {
           descriptiveText=""
           isRequired={true}
           isReadOnly={false}
-          placeholder="HH"
+          placeholder="H"
           type="number"
           step="any"
           onChange={(e) => {
