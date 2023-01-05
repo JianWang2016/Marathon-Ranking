@@ -21,13 +21,8 @@ const columns = [
     sortable: true,
   },
   {
-    name: 'First Name',
-    selector: row => row.firstName,
-    sortable: true,
-  },
-  {
-    name: 'Last Name',
-    selector: row => row.lastName,
+    name: 'Name',
+    selector: row => row.name,
     sortable: true,
   },
   {
@@ -74,6 +69,7 @@ function Home({races}) {
     let m_s = item.finishMin ? item.finishMin.toString() : '00'
     let s_s = item.finishSec ? item.finishSec.toString() : '00'
     item['finishDur'] = h_s + ':' + m_s + ':' + s_s
+    item['name'] = item.firstName + ' ' + item.lastName
   })
 
   let races_sorted = _.sortBy(races, 'finishDurSec');

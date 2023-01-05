@@ -137,8 +137,7 @@ export const schema = {
             "name": "GenderType",
             "values": [
                 "MALE",
-                "FEMALE",
-                "NONBINARY"
+                "FEMALE"
             ]
         }
     },

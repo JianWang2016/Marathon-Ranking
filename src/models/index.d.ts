@@ -4,8 +4,7 @@ import { LazyLoading, LazyLoadingDisabled } from "@aws-amplify/datastore";
 
 export enum GenderType {
   MALE = "MALE",
-  FEMALE = "FEMALE",
-  NONBINARY = "NONBINARY"
+  FEMALE = "FEMALE"
 }
 
 

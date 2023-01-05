@@ -16,6 +16,5 @@ type Race @model @auth(rules: [{allow: public}]) {
 enum GenderType {
   MALE
   FEMALE
-  NONBINARY
 }
  

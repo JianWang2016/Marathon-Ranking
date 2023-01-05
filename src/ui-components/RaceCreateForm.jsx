@@ -544,11 +544,6 @@ export default function RaceCreateForm(props) {
             value="FEMALE"
             {...getOverrideProps(overrides, "genderoption1")}
           ></option>
-          <option
-            children="Nonbinary"
-            value="NONBINARY"
-            {...getOverrideProps(overrides, "genderoption2")}
-          ></option>
         </SelectField>
         <TextField
           label="Dob"

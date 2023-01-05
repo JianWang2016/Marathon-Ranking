@@ -4,8 +4,7 @@ import { schema } from './schema';
 
 const GenderType = {
   "MALE": "MALE",
-  "FEMALE": "FEMALE",
-  "NONBINARY": "NONBINARY"
+  "FEMALE": "FEMALE"
 };
 
 const { Race } = initSchema(schema);
