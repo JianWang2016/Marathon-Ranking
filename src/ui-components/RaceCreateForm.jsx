@@ -177,8 +177,10 @@ export default function RaceCreateForm(props) {
       >
         <TextField
           label="Finish hour"
+          descriptiveText=""
           isRequired={true}
           isReadOnly={false}
+          placeholder="HH"
           type="number"
           step="any"
           onChange={(e) => {
@@ -221,6 +223,7 @@ export default function RaceCreateForm(props) {
           label="Finish min"
           isRequired={false}
           isReadOnly={false}
+          placeholder="MM"
           type="number"
           step="any"
           onChange={(e) => {
@@ -263,6 +266,7 @@ export default function RaceCreateForm(props) {
           label="Finish sec"
           isRequired={false}
           isReadOnly={false}
+          placeholder="SS"
           type="number"
           step="any"
           onChange={(e) => {
@@ -578,6 +582,7 @@ export default function RaceCreateForm(props) {
         label="Email"
         isRequired={false}
         isReadOnly={false}
+        placeholder="johnsmith@gmail.com"
         onChange={(e) => {
           let { value } = e.target;
           if (onChange) {
@@ -616,7 +621,7 @@ export default function RaceCreateForm(props) {
           {...getOverrideProps(overrides, "RightAlignCTASubFlex")}
         >
           <Button
-            children="Enter best race finishing time to join the ranking"
+            children="Input best race finishing time for ranking"
             type="submit"
             variation="primary"
             isDisabled={Object.values(errors).some((e) => e?.hasError)}
