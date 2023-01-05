@@ -1,4 +1,3 @@
-import React from 'react'
 import Head from "next/head"
 import Link from "next/link"
 import Image from "next/image"
@@ -7,15 +6,13 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Layout from "../components/Layout";
 import { Flex, Box, Text, Button, StylesProvider } from '@chakra-ui/react'
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { useRouter } from 'next/router';
 
 
 
 
 function Male() {
-
-
 
   return (
     <>
