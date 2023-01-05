@@ -13,18 +13,18 @@ const Navbar = () => (
                 <MenuButton as={IconButton} icon={<FcMenu />} variant="outlined" color="red.400" />
                 <MenuList>
                     <Link href="/" passHref>
-                        <MenuItem icon={<FcDatabase />}>All Ranking</MenuItem>
+                        <MenuItem icon={<FcDatabase />}>All ranking</MenuItem>
                     </Link>
                     <Link href="/male" passHref>
-                        <MenuItem icon={<FcBusinessman />}>Male Ranking</MenuItem>
+                        <MenuItem icon={<FcBusinessman />}>Male ranking</MenuItem>
                     </Link>
                     <Link href="/female" passHref>
-                        <MenuItem icon={<FcBusinesswoman />}>Female Ranking</MenuItem>
+                        <MenuItem icon={<FcBusinesswoman />}>Female ranking</MenuItem>
                     </Link>
                     <Link href="/entry" passHref>
                         <MenuItem icon={<FcLike />}>Join to rank</MenuItem>
                     </Link>
-                    <Link href="/" passHref>
+                    <Link href="/contact" passHref>
                         <MenuItem icon={<FcQuestions />}>Contact us</MenuItem>
                     </Link>
                 </MenuList>
