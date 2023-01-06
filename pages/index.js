@@ -14,6 +14,7 @@ import { listRaces } from '../src/graphql/queries'
 import DataTable from 'react-data-table-component'
 import _, { sortBy } from 'underscore' 
 import { useEffect, useState } from "react";
+import moment from "moment";
 
 
 const columns = [
@@ -40,6 +41,11 @@ const columns = [
   {
     name: 'Gender',
     selector: row => row.gender,
+    sortable: true,
+  },
+  {
+    name: 'Age',
+    selector: row => row.age,
     sortable: true,
   },
   {
@@ -72,7 +78,14 @@ function Home({races}) {
     let s_s = item.finishSec ? item.finishSec.toString() : '00'
     item['finishDur'] = h_s + ':' + m_s + ':' + s_s
     item['name'] = item.firstName + ' ' + item.lastName
+
+    let userDob = moment(item.dob.toString())
+    let age = moment().diff(userDob, 'years')
+    item['age'] = age.toString()
+  
   })
+  console.log(races)
+
 
   let races_sorted = _.sortBy(races, 'finishDurSec');
 
