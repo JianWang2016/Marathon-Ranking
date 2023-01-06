@@ -12,7 +12,8 @@ import { withSSRContext } from 'aws-amplify'
 import { listRaces } from '../src/graphql/queries'
 // import 'styled-components' 
 import DataTable from 'react-data-table-component'
-import _, { sortBy } from 'underscore'
+import _, { sortBy } from 'underscore' 
+import { useEffect, useState } from "react";
 
 
 const columns = [
@@ -81,6 +82,15 @@ function Home({races}) {
     i++
   })
 
+  // handle rehydration issues
+  const [hasMounted, setHasMounted] = useState(false);
+  useEffect(() => {
+    setHasMounted(true);
+  }, []);
+  if (!hasMounted) {
+    return null;
+  }
+
   return (
     <>
       <Head>
@@ -89,9 +99,10 @@ function Home({races}) {
       </Head>
       <div className='container'>
         <h1 className={styles.title}>All Runner Finish Time Ranking</h1>
-            <DataTable dense 
+            <DataTable dense pagination 
               columns={columns} 
-              data={races_sorted} />
+              data={races_sorted} 
+            />
         
         Please go to <Link className='linkover' href='/entry'>Join to Rank</Link> page to enter your race information.
 
