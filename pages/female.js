@@ -1,6 +1,6 @@
 import Head from "next/head"
 import Link from "next/link"
-import Image from "next/image"
+// import Image from "next/image"
 import styles from '../styles/Home.module.css'
 // import Navbar from '../components/Navbar'
 // import Footer from '../components/Footer'
@@ -8,7 +8,7 @@ import styles from '../styles/Home.module.css'
 // import { Flex, Box, Text, Button, StylesProvider } from '@chakra-ui/react'
 import { DataStore } from 'aws-amplify'
 import { useState, useEffect } from 'react'
-import { useRouter } from 'next/router';
+// import { useRouter } from 'next/router';
 
 import { Race } from "../src/models"
 import DataTable from 'react-data-table-component'
@@ -73,10 +73,8 @@ function Female() {
       <div className="container">
         <h1 className={styles.title}>All Female Runner Finish Time Ranking</h1>
         
-        <DataTable columns={columns} data={race} />
-
-
-        
+        <DataTable dense columns={columns} data={race} />
+    
         Please go to <Link className='linkover' href='/entry'>Join to Rank</Link> page to enter your race information.
 
       </div>

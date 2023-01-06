@@ -1,18 +1,18 @@
 import '../styles/globals.css'
-import React from 'react'
-import Router from "next/router"
+// import React from 'react'
+// import Router from "next/router"
 import Head from "next/head"
-import NProgress from "nprogress"
+// import NProgress from "nprogress"
 import { ChakraProvider } from "@chakra-ui/react"
 
 import Layout from "../components/Layout"
 
 // Initial setup instructed by Amplify studio
-import { ThemeProvider } from "@aws-amplify/ui-react";
+// import { ThemeProvider } from "@aws-amplify/ui-react";
 import { Amplify } from 'aws-amplify';
 import awsmobile from '../src/aws-exports';
 import "@aws-amplify/ui-react/styles.css";
-import { studioTheme } from "../src/ui-components";
+// import { studioTheme } from "../src/ui-components";
 
 Amplify.configure({...awsmobile, ssr: true});
 // end initial setup instructed by Amplify studio

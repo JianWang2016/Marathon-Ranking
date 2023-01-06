@@ -10,6 +10,7 @@ import styles from '../styles/Home.module.css'
 // import { useState, useEffect } from 'react'
 import { withSSRContext } from 'aws-amplify'
 import { listRaces } from '../src/graphql/queries'
+// import 'styled-components' 
 import DataTable from 'react-data-table-component'
 import _, { sortBy } from 'underscore'
 
@@ -86,13 +87,12 @@ function Home({races}) {
         <title>Marathon Ranking | Home</title>
         <meta name="keywords" content="Ranking Marathon Finishing Time - All" />
       </Head>
-      <div>
+      <div className='container'>
         <h1 className={styles.title}>All Runner Finish Time Ranking</h1>
-        <div className='container'>
-           <h1>Ranking</h1>
-            <DataTable columns={columns} data={races_sorted} />
-
-        </div>
+            <DataTable dense 
+              columns={columns} 
+              data={races_sorted} />
+        
         Please go to <Link className='linkover' href='/entry'>Join to Rank</Link> page to enter your race information.
 
       </div>
