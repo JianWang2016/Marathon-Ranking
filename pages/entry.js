@@ -19,7 +19,7 @@ function Entry() {
           <RaceCreateForm onSuccess={() => { setShowForm(false) }} />
         ) : (
           <Alert variation="success">Congratulation on your achievement!
-            Head over to ranking page to see how you are doing.
+            Please Head over to ranking page to see how you are doing.
           </Alert>
         )
       } 
